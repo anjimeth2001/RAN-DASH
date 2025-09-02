@@ -88,11 +88,11 @@ def main_application():
     input_method = st.radio("Choose method:", ["Upload Files"])
 
     # --- Define file variables ---
-    exd_file = st.file_uploader("Upload Dye Data Excel", type=["xls","xlsx"])
-    logbook_file = st.file_uploader("Upload Logbook Excel", type=["xls","xlsx"])
+    exd_file = st.file_uploader("Upload Range Dye Data Excel", type=["xls","xlsx"])
+    logbook_file = st.file_uploader("Upload Dye Plan/Logbook Excel", type=["xls","xlsx"])
     maindye_file = st.file_uploader("Upload Main Dye Sample Excel", type=["xls","xlsx"])
     finalsample_file = st.file_uploader("Upload Final Sample Excel", type=["xls","xlsx"])
-    cmc_file = st.file_uploader("Upload CMC Data Entry Excel", type=["xls","xlsx"])
+    cmc_file = st.file_uploader("Upload NS Redye Excel", type=["xls","xlsx"])
 
     if exd_file and logbook_file and maindye_file and finalsample_file and cmc_file:
         st.success("✅ All files linked successfully!")
